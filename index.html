@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>game</title>
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<script src="game.js"></script>
+	<script>
+	window.onload=function(){
+	    var games=new game();
+	    games.play();
+	    var select=document.getElementsByTagName("select")[0];
+	    select.onchange=function(){
+	        games.speed+=parseInt((select[select.selectedIndex].value));
+	        games.leeterLen+=parseInt((select[select.selectedIndex].value));
+	        games.aa+=parseInt((select[select.selectedIndex].value));
+	        games.play();
+	    }
+	}
+	</script>
+
+	
+</head>
+<body>
+<!--<audio src="fcml.mp3"></audio>-->
+	<div class="panel">
+		<div class="die">
+			<span>生命：</span><span>10</span>
+		</div>
+		<div class="sore">
+			<span>分数：</span><span>0</span>
+		</div>
+		<select>
+			<option>第一关</option>
+			<option>第二关</option>
+			<option>第三关</option>
+		</select>
+	</div>
+<div class="pai left" data-role="animate-doudong"></div>
+<div class="pai right" data-role="animate-doudong"></div>
+
+
+
+</body>
+</html>

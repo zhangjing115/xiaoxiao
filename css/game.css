@@ -1,0 +1,86 @@
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:url("../img/header.png") no-repeat 0 -150px;
+	background-size:cover;
+}
+.pai{
+	width:200px;
+	height:200px;
+	/*position:fixed;*/
+	/*bottom:20px;*/
+
+}
+.left{
+	/*float: left;*/
+	margin-top:50px;
+	background: url("../img/right.png") no-repeat;
+	background-size:contain;
+	margin-bottom: 50px;
+}
+.right{
+	/*float:left;*/
+	background: url("../img/left.png") no-repeat;
+	background-size: contain;
+	left:200px;
+}
+.panel{
+	width:100%;
+	height:30px;
+	color:white;
+	font-weight: bold;
+	font-size: 22px;
+	/*position: fixed;*/
+	/*left:0;*/
+	/*bottom:0;*/
+	/*background: #207124;*/
+}
+.panel .die{
+	width:10%;
+	height:30px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	top:352px;
+	left:29px;
+	z-index: 22;
+
+
+
+}
+.panel .sore{
+	width:10%;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	top:400px;
+	left:29px;
+	z-index: 22;
+
+}
+select{
+	width:8%;
+	height:30px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	background: rgba(0,0,0,0);
+	color:white;
+	font-weight: bold;
+	font-size: 22px;
+	top:103px;
+	left:39px;
+	z-index: 22;
+}
+option{
+	font-size: 22px;
+	background: rgba(0,0,0,0);
+	color:white;
+	background: #C1A172;
+}
